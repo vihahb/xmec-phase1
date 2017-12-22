@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ln_warning"
+    tools:showIn="@layout/fragment_drug_search">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/img_message"
+            android:padding="@dimen/size_4"
+            android:background="@drawable/round_line_color_primary"
+            android:layout_width="@dimen/size_36"
+            android:layout_height="@dimen/size_36"
+            app:srcCompat="@drawable/ic_priority_warning_black_24dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_gravity="center"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/size_64"
+            android:indeterminate="true"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/size_8"
+        android:id="@+id/tv_message"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:textStyle="italic"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/black_30"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size_24"
+    android:background="@color/white_100"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/TextVIew.white.16"
+        android:background="@drawable/background_dialog_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16"
+        android:text="@string/dialog_noti" />
+
+    <TextView
+        android:id="@+id/txt_message"
+        style="@style/TextVIew.black.13"
+        android:padding="@dimen/size_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/login_dialog_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_disease_cancel" />
+
+        <View
+            android:layout_width="@dimen/size_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/login_text" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/Button.blue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_hr_delete" />
+    </LinearLayout>
+</LinearLayout>

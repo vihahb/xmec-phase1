@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <!-- Theme chọn thời gian -->
+    <style name="PickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+
+    <style name="Theme_Transparent" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+    </style>
+
+    <!--&lt;!&ndash; AccountKit &ndash;&gt;-->
+    <!--<style name="AppLoginTheme" parent="Theme.AccountKit">-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="com_accountkit_input_text_color">@color/white_100</item>-->
+        <!--<item name="com_accountkit_input_background_color">@android:color/transparent</item>-->
+        <!--<item name="com_accountkit_input_border_color">@color/white_100</item>-->
+
+        <!--<item name="com_accountkit_title_text_color">#ffffff</item>-->
+        <!--<item name="com_accountkit_primary_text_color">#ffffff</item>-->
+        <!--<item name="com_accountkit_primary_color">#ffffff</item>-->
+        <!--<item name="com_accountkit_header_text_color">#ffffff</item>-->
+        <!--<item name="com_accountkit_text_color">#ffffff</item>-->
+
+        <!--<item name="com_accountkit_background">@mipmap/im_account_kit</item>-->
+        <!--<item name="com_accountkit_background_color">@color/white_10</item>-->
+
+        <!--&lt;!&ndash; Button &ndash;&gt;-->
+        <!--<item name="com_accountkit_button_text_color">@android:color/white</item>-->
+        <!--<item name="com_accountkit_button_disabled_text_color">@android:color/white</item>-->
+
+        <!--<item name="com_accountkit_button_background_color">@android:color/transparent</item>-->
+        <!--<item name="com_accountkit_button_border_color">@color/white_100</item>-->
+
+        <!--<item name="com_accountkit_button_disabled_background_color">@color/white_10</item>-->
+        <!--<item name="com_accountkit_button_pressed_background_color">@color/white_10</item>-->
+    <!--</style>-->
+
+    <!-- View -->
+    <style name="View" />
+
+    <style name="View.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_0_5</item>
+    </style>
+
+    <style name="View.Horizontal.Blue">
+        <item name="android:background">@color/blue_40</item>
+    </style>
+
+    <style name="View.Horizontal.Blue.48">
+        <item name="android:layout_marginStart">@dimen/size_48</item>
+    </style>
+
+    <style name="View.Horizontal.Blue.Hr_Create">
+        <item name="android:layout_marginStart">@dimen/size_48</item>
+    </style>
+
+    <style name="View.Horizontal.Blue.Hr_Option">
+        <item name="android:layout_marginStart">@dimen/size_48</item>
+    </style>
+
+    <style name="View.Horizontal.Black">
+        <item name="android:background">@color/black_40</item>
+    </style>
+
+    <style name="View.Horizontal.Blue.Detail_Schedule">
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+        <item name="android:layout_marginBottom">@dimen/size_16</item>
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+    </style>
+
+    <style name="View.Horizontal.Blue.Alarm">
+        <item name="android:layout_marginTop">@dimen/size_8</item>
+    </style>
+
+    <!-- RadioButton -->
+    <style name="RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RadioButton.Black">
+        <item name="android:textColor">@color/black_85</item>
+    </style>
+
+    <style name="RadioButton.Black.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="RadioButton.Black.16.Alarm">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableEnd">@drawable/icon_radio_button</item>
+        <item name="android:paddingTop">@dimen/size_12</item>
+        <item name="android:paddingBottom">@dimen/size_12</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- CardView -->
+    <style name="CardViews" parent="Base.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardUseCompatPadding">false</item>
+    </style>
+
+    <style name="CardViews.Hr_Create">
+        <item name="android:layout_marginTop">@dimen/size_8</item>
+    </style>
+
+
+    <!-- TextView -->
+    <style name="TextVIew">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/size_16</item>
+    </style>
+
+    <style name="TextVIew.black">
+        <item name="android:textColor">@color/black_85</item>
+        <item name="android:textColorHint">@color/black_55</item>
+    </style>
+
+    <style name="TextVIew.black.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextVIew.black.14">
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="TextVIew.black.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="TextVIew.black.20">
+        <item name="android:textSize">@dimen/font_20</item>
+    </style>
+
+    <style name="TextVIew.black.24">
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+
+    <style name="TextVIew.black.13.shared">
+        <item name="android:layout_marginTop">@dimen/size_4</item>
+        <item name="android:drawablePadding">@dimen/size_8</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/black_55</item>
+    </style>
+
+    <style name="TextVIew.black.13.mbr_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/size_8</item>
+        <item name="android:drawablePadding">@dimen/size_8</item>
+    </style>
+
+    <style name="TextVIew.black.13.Detail_Schedule">
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+        <item name="android:textColor">@color/black_55</item>
+    </style>
+
+    <style name="TextVIew.black.16.Detail_Schedule">
+        <item name="android:layout_marginTop">@dimen/size_8</item>
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+    </style>
+
+    <style name="TextVIew.black.13.Alarm">
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+        <item name="android:textColor">@color/black_55</item>
+    </style>
+
+    <style name="TextVIew.black.16.Alarm">
+        <item name="android:layout_marginTop">@dimen/size_8</item>
+    </style>
+
+
+
+
+    <style name="TextVIew.white">
+        <item name="android:textColor">@color/white_100</item>
+    </style>
+
+    <style name="TextVIew.white.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextVIew.white.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="TextVIew.white.18">
+        <item name="android:textSize">@dimen/font_18</item>
+    </style>
+
+    <style name="TextVIew.white.20">
+        <item name="android:textSize">@dimen/font_20</item>
+    </style>
+
+    <style name="TextVIew.white.22">
+        <item name="android:textSize">@dimen/font_22</item>
+    </style>
+
+    <style name="TextVIew.white.24">
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+
+    <style name="TextVIew.blue">
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+
+    <style name="TextVIew.blue.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextVIew.blue.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="TextVIew.blue.18">
+        <item name="android:textSize">@dimen/font_18</item>
+    </style>
+
+    <style name="TextVIew.blue.20">
+        <item name="android:textSize">@dimen/font_20</item>
+    </style>
+
+    <style name="TextVIew.blue.22">
+        <item name="android:textSize">@dimen/font_22</item>
+    </style>
+
+    <style name="TextVIew.blue.24">
+        <item name="android:textSize">@dimen/font_24</item>
+    </style>
+
+    <style name="TextVIew.red">
+        <item name="android:textColor">@color/red_100</item>
+    </style>
+
+    <style name="TextVIew.red.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextVIew.red.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+
+
+
+    <!-- TextInputLayout -->
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/size_13</item>
+    </style>
+
+    <style name="TextInputLayout_Theme_Black">
+        <item name="colorControlNormal">@color/black_55</item>
+        <item name="colorControlActivated">@color/black_85</item>
+        <item name="colorControlHighlight">@color/black_85</item>
+    </style>
+
+    <style name="TextInputLayout_Theme_White">
+        <item name="colorControlNormal">@color/white_20</item>
+        <item name="colorControlActivated">@color/white_40</item>
+        <item name="colorControlHighlight">@color/white_40</item>
+    </style>
+
+    <!--<style name="TextInputLayout_Theme_Blue">-->
+        <!--<item name="colorControlNormal">@color/login_text</item>-->
+        <!--<item name="colorControlActivated">@color/login_text</item>-->
+        <!--<item name="colorControlHighlight">@color/login_text</item>-->
+    <!--</style>-->
+
+    <style name="TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+    </style>
+
+    <style name="TextInputLayout.Black">
+        <item name="android:textColorHint">@color/black_55</item>
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+    <style name="TextInputLayout.White">
+        <item name="android:theme">@style/TextInputLayout_Theme_White</item>
+    </style>
+
+    <style name="TextInputLayout.Blue">
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+    <style name="TextInputLayout.Black.Account">
+        <item name="android:layout_marginStart">@dimen/size_24</item>
+        <item name="android:layout_marginEnd">@dimen/size_24</item>
+    </style>
+
+    <style name="TextInputLayout.Login">
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+    <style name="TextInputLayout.Mbr">
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+    <style name="TextInputLayout.Hr_Create">
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+    <style name="TextInputLayout.Drug_Create">
+        <item name="android:layout_marginStart">@dimen/size_16</item>
+        <item name="android:layout_marginEnd">@dimen/size_16</item>
+        <item name="android:layout_marginTop">@dimen/size_16</item>
+        <item name="android:theme">@style/TextInputLayout_Theme_Black</item>
+    </style>
+
+
+    <!-- EditText -->
+    <style name="EditText_Theme_Black">
+        <item name="colorControlNormal">@color/black_55</item>
+        <item name="colorControlActivated">@color/black_85</item>
+        <item name="colorControlHighlight">@color/black_85</item>
+    </style>
+
+    <style name="EditText_Theme_White">
+        <item name="colorControlNormal">@color/white_20</item>
+        <item name="colorControlActivated">@color/white_40</item>
+        <item name="colorControlHighlight">@color/white_40</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/size_16</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingTop">@dimen/size_8</item>
+        <item name="android:paddingBottom">@dimen/size_8</item>
+    </style>
+
+    <style name="EditText.Black">
+        <item name="android:textColor">@color/black_85</item>
+        <item name="android:textColorHint">@color/black_55</item>
+        <item name="android:theme">@style/EditText_Theme_Black</item>
+    </style>
+
+    <style name="EditText.Black.Disable">
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="EditText.white">
+        <item name="android:textColor">@color/white_100</item>
+        <item name="android:textColorHint">@color/white_55</item>
+        <item name="android:theme">@style/EditText_Theme_White</item>
+    </style>
+
+    <style name="EditText.Login">
+        <item name="android:textColor">@color/login_text</item>
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_8</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Black.Password">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Black.Schedule">
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_8</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Black.Schedule.Disable">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="EditText.Black.YBa">
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_4</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Black.Hr_Create">
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_4</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Black.Hr_Create.Disable">
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="EditText.Overview">
+        <item name="android:textColor">@color/login_text</item>
+        <item name="android:textColorHint">@color/black_55</item>
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_4</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="EditText.Create_Drug">
+        <item name="android:textColor">@color/black_85</item>
+        <item name="android:textColorHint">@color/black_55</item>
+        <item name="android:drawablePadding">@dimen/size_24</item>
+        <item name="android:paddingBottom">@dimen/size_4</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Button -->
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/size_36</item>
+        <item name="android:minWidth">@dimen/size_64</item>
+        <item name="android:paddingStart">@dimen/size_8</item>
+        <item name="android:paddingEnd">@dimen/size_8</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button.white">
+        <item name="android:textColor">@color/white_100</item>
+    </style>
+
+    <style name="Button.white.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="Button.white.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+
+    <style name="Button.black">
+        <item name="android:textColor">@color/black_85</item>
+    </style>
+
+    <style name="Button.black.13">
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="Button.black.16">
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="Button.blue">
+        <item name="android:textColor">@color/blue_100</item>
+    </style>
+
+    <style name="Button.green">
+        <item name="android:textColor">@color/green_100</item>
+    </style>
+
+
+    <style name="Button.white.SlideView">
+        <item name="android:drawablePadding">@dimen/size_16</item>
+        <item name="android:maxWidth">@dimen/size_350</item>
+        <item name="android:minWidth">@dimen/size_350</item>
+        <item name="android:height">@dimen/size_48</item>
+        <item name="android:layout_marginTop">@dimen/size_8</item>
+        <item name="android:layout_marginStart">@dimen/size_24</item>
+        <item name="android:layout_marginEnd">@dimen/size_24</item>
+    </style>
+
+    <style name="Button.white.Account">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">@dimen/size_48</item>
+        <item name="android:layout_marginTop">@dimen/size_24</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:layout_marginStart">@dimen/size_24</item>
+        <item name="android:layout_marginEnd">@dimen/size_24</item>
+    </style>
+
+    <style name="Button.white.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">@dimen/size_48</item>
+        <item name="android:layout_marginTop">@dimen/size_24</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:layout_marginStart">@dimen/size_36</item>
+        <item name="android:layout_marginEnd">@dimen/size_36</item>
+    </style>
+
+    <style name="Button.black.Health_record_option">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_48</item>
+        <item name="android:paddingStart">@dimen/size_16</item>
+        <item name="android:paddingEnd">@dimen/size_16</item>
+        <item name="android:drawablePadding">@dimen/size_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/size_8"
+    android:layout_marginRight="@dimen/size_16"
+    android:layout_marginLeft="@dimen/size_16"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingBottom="@dimen/size_8">
+
+        <ImageView
+            android:id="@+id/img_post"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_90"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/size_16"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_title"
+                android:textColor="@color/black_75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_18"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_resource_coppy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Vicare"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/font_11"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="-  36 phút trước"
+                    android:textSize="@dimen/font_11"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/black_30"/>
+</LinearLayout>

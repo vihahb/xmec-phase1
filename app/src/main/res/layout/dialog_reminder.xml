@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_20"
+    android:padding="@dimen/size_24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_layout_background"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextVIew.blue.16"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_16"
+            android:paddingTop="@dimen/size_16"
+            android:text="@string/layout_alarm_schedule" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0_5"
+            android:background="@color/text_blue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/size_128"
+                android:layout_height="@dimen/size_128"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/size_16"
+                android:contentDescription="@null"
+                android:src="@mipmap/im_alarm_blue" />
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/size_16"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:paddingStart="@dimen/size_16"
+                android:visibility="visible">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextVIew.black.13.Alarm"
+                    android:layout_marginTop="@dimen/size_0"
+                    android:text="@string/layout_alarm_name" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_name"
+                    style="@style/TextVIew.black.16.Alarm"
+                    android:text="@string/layout_alarm_name" />
+
+                <View style="@style/View.Horizontal.Blue.Alarm" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextVIew.black.13.Alarm"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:text="@string/layout_alarm_time" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txt_time"
+                    style="@style/TextVIew.black.16.Alarm"
+                    android:text="@string/layout_alarm_time" />
+
+                <View style="@style/View.Horizontal.Blue.Alarm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/size_16"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:paddingStart="@dimen/size_16"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextVIew.black.13.Alarm"
+                    android:layout_marginTop="@dimen/size_0"
+                    android:text="@string/layout_alarm_time" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_5"
+                        style="@style/RadioButton.Black.16.Alarm"
+                        android:checked="true"
+                        android:text="@string/layout_alarm_5_minute" />
+
+                    <View style="@style/View.Horizontal.Blue" />
+
+                    <RadioButton
+                        android:id="@+id/rb_10"
+                        style="@style/RadioButton.Black.16.Alarm"
+                        android:text="@string/layout_alarm_10_minute" />
+
+                    <View style="@style/View.Horizontal.Blue" />
+
+                    <RadioButton
+                        android:id="@+id/rb_15"
+                        style="@style/RadioButton.Black.16.Alarm"
+                        android:text="@string/layout_alarm_15_minute" />
+
+                    <View style="@style/View.Horizontal.Blue" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/size_24"
+            android:layout_height="@dimen/size_0_5"
+            android:layout_width="match_parent"
+            android:background="@color/text_blue" />
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:background="@drawable/round_bottom_layout"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_repeat"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_alarm_brn_repeat" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_detail"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_alarm_brn_detail" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_close"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_alarm_brn_close" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_24"
+            android:background="@color/login_dialog_background"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_alarm_brn_cancel" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_done"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_alarm_brn_done" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

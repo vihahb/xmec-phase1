@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_12"
+        android:elevation="@dimen/size_4"
+        app:cardBackgroundColor="@color/white_100"
+        app:cardCornerRadius="@dimen/size_4"
+        app:cardElevation="@dimen/size_4"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_68"
+                android:orientation="vertical"
+                android:padding="@dimen/size_8">
+
+                <TextView
+                    android:id="@+id/type_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/size_8"
+                    android:text="Bệnh viện" />
+
+                <TextView
+                    android:id="@+id/name_hospital"
+                    style="@style/TextVIew.black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/size_8"
+                    android:paddingRight="@dimen/size_8"
+                    android:text="Tên cơ sở "
+                    android:textSize="@dimen/font_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tag_hospital"
+                    style="@style/TextVIew.black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_4"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/size_8"
+                    android:paddingRight="@dimen/size_8"
+                    android:text="Chuyên khoa: "
+                    android:textSize="@dimen/font_11"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/address_hospital"
+                    style="@style/TextVIew.black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_4"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/size_8"
+                    android:paddingRight="@dimen/size_8"
+                    android:text="Địa chỉ"
+                    android:textSize="@dimen/font_11" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/image_hospital"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            app:border="true"
+            app:border_color="#EEEEEE"
+            app:border_width="0.5dp"
+            app:shadow="true" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_4"
+            android:background="@drawable/bg_circle_blue"
+            android:padding="@dimen/size_4"
+            android:text="123 Km"
+            android:textColor="@color/white_100"
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+</FrameLayout>

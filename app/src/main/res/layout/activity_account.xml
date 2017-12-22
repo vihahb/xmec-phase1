@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xtelsolution.xmec.view.activity.account.AccountActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_132">
+
+                <ImageView
+                    android:id="@+id/img_avatar_blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_10"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_100"
+                    android:layout_gravity="center"
+                    android:background="@drawable/outline_circle_blue_0_5">
+
+                    <com.xtelsolution.xmec.view.widget.RoundImage
+                        android:id="@+id/img_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/size_4"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/img_take_picture"
+                        android:layout_width="@dimen/size_28"
+                        android:layout_height="@dimen/size_28"
+                        android:layout_gravity="bottom|end|right"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_mbr_camera_24" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Black.Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_name"
+                    style="@style/EditText.Black"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/ic_account_user_blue_24"
+                    android:drawableStart="@mipmap/ic_account_user_blue_24"
+                    android:hint="@string/layout_account_username"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapWords"
+                    android:maxLength="25" />
+
+                <View style="@style/View.Horizontal.Black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Black.Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_phone"
+                    style="@style/EditText.Black"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/ic_account_phone_blue_24"
+                    android:drawableStart="@mipmap/ic_account_phone_blue_24"
+                    android:hint="@string/layout_account_phonenumber"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:maxLength="25" />
+
+                <View style="@style/View.Horizontal.Black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_change_pass"
+                style="@style/Button.white.Account"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginBottom="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_48"
+                android:text="@string/layout_account_change_pass" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

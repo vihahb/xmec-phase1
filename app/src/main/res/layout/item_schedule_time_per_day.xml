@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48"
+    android:layout_marginTop="@dimen/size_8"
+    android:background="@drawable/outline_square_das_blue_1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/size_16"
+    android:paddingLeft="@dimen/size_16"
+    android:paddingRight="@dimen/size_16"
+    android:paddingStart="@dimen/size_16">
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/TextVIew.black.16"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        style="@style/TextVIew.black.16"
+        android:layout_width="wrap_content"
+        android:drawableEnd="@mipmap/ic_schedule_edit_black_18"
+        android:drawableRight="@mipmap/ic_schedule_edit_black_18" />
+</LinearLayout>

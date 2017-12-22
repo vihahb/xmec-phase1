@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    tools:context="com.xtelsolution.xmec.view.activity.hospitalInfo.HospitalInfoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        app:elevation="0dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            app:elevation="0dp"
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@drawable/background_toolbar"
+            app:toolbarId="@+id/toolbar"
+            app:titleEnabled="false">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/bg_hospital"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_56"
+                    android:background="@drawable/opacity_black_vertical"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:titleMarginStart="@dimen/size_36"
+                android:background="@drawable/toolbar_opacity_vertical"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <View
+                    android:id="@+id/v_destination_hospital_image"
+                    android:layout_width="@dimen/size_48"
+                    android:layout_height="@dimen/size_48"
+                    android:elevation="5dp"
+                    android:layout_marginStart="@dimen/size_40"
+                    android:layout_marginLeft="@dimen/size_40"/>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_avatar"
+        android:layout_width="@dimen/size_70"
+        android:layout_height="@dimen/size_70"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/outline_circle_blue_0_5"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:behavior_destination_id="@id/v_destination_hospital_image"
+        app:layout_behavior="@string/appbar_translate_scale_behavior">
+
+        <com.xtelsolution.xmec.view.widget.RoundImage
+            android:id="@+id/img_avatar_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size_4"
+            android:contentDescription="@null"
+            android:src="@mipmap/im_docter" />
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/size_8"
+                android:orientation="vertical"
+                tools:targetApi="lollipop">
+
+                <include layout="@layout/include_hospital_info" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <fragment
+                        android:id="@+id/map"
+                        android:clickable="false"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_170"
+                        android:layout_marginBottom="@dimen/size_16"
+                        android:layout_marginTop="@dimen/size_16" />
+                    <View
+                        android:id="@+id/view_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_150"/>
+                </FrameLayout>
+
+                <include layout="@layout/include_rate" />
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

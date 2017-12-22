@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mbr"
+            android:checked="true"
+            android:icon="@mipmap/ic_mbr_blue_24"
+            android:title="@string/menu_navigation_mbr" />
+        <item
+            android:id="@+id/nav_infomation"
+            android:icon="@mipmap/ic_infomation_blue_24"
+            android:title="@string/menu_navigation_infomation" />
+        <item
+            android:id="@+id/nav_searching_disease"
+            android:icon="@mipmap/ic_searching_sick_blue_24"
+            android:title="@string/menu_navigation_searching_sick" />
+        <item
+            android:id="@+id/nav_searching_medicine"
+            android:icon="@mipmap/ic_searching_medicine_blue_24"
+            android:title="@string/menu_navigation_searching_medicine" />
+        <item
+            android:id="@+id/nav_medical_facility"
+            android:icon="@mipmap/ic_medical_facility_blue_24"
+            android:title="@string/menu_navigation_medical_facility" />
+    </group>
+
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/ic_share_blue_24"
+            android:title="@string/menu_navigation_share" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/ic_setting_blue_24"
+            android:title="@string/menu_navigation_setting" />
+    </group>
+
+    <group
+        android:id="@+id/group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_log_out_24"
+            android:title="@string/menu_navigation_logout" />
+    </group>
+</menu>

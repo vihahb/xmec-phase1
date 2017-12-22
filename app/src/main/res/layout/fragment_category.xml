@@ -1,0 +1,8 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xtelsolution.xmec.view.fragment.news.CategoryFragment">
+    <include
+        layout="@layout/base_list_refresh"/>
+</FrameLayout>

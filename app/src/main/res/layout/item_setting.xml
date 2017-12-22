@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_16"
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/size_16">
+
+    <LinearLayout
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_icon"
+            android:src="@mipmap/ic_tuong_tac"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24" />
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_16"
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/size_16"
+            android:text="Điều khoản sử dụng"
+            android:textColor="@color/black_75" />
+        <ImageView
+            android:src="@drawable/ic_action_right"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/colorPrimaryDar_40"/>
+</LinearLayout>

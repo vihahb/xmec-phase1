@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_160"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_16"
+            android:paddingEnd="@dimen/size_16"
+            android:paddingLeft="@dimen/size_16"
+            android:paddingRight="@dimen/size_16"
+            android:paddingStart="@dimen/size_16"
+            android:paddingTop="@dimen/size_16">
+
+            <FrameLayout
+                android:layout_width="@dimen/size_56"
+                android:layout_height="@dimen/size_56"
+                android:layout_marginTop="@dimen/size_2"
+                android:background="@drawable/outline_circle_blue_0_5">
+
+                <com.xtelsolution.xmec.view.widget.RoundImage
+                    android:id="@+id/img_main_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/size_2"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_6"
+                android:layout_marginStart="@dimen/size_6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/TextVIew.black.16"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginStart="@dimen/size_8"
+                    android:maxLines="1"
+                    android:text="@string/app_name"
+                    android:layout_marginRight="@dimen/size_32"
+                    android:layout_marginEnd="@dimen/size_32"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_16"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_birthday"
+                        style="@style/TextVIew.black.13.mbr_item"
+                        android:drawableLeft="@mipmap/ic_mbr_birthday_black_14"
+                        android:drawableStart="@mipmap/ic_mbr_birthday_black_14" />
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        style="@style/TextVIew.black.13.mbr_item"
+                        android:layout_marginLeft="@dimen/size_12"
+                        android:layout_marginStart="@dimen/size_12" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:layout_marginTop="@dimen/size_6">
+
+                        <TextView
+                            style="@style/TextVIew.black.13.mbr_item"
+                            android:drawableLeft="@mipmap/ic_mbr_link_black_14"
+                            android:drawableStart="@mipmap/ic_mbr_link_black_14"
+                            android:text="@string/layout_mbr_item_link" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview_link"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/size_16"
+                            android:layout_marginLeft="@dimen/size_8"
+                            android:layout_marginStart="@dimen/size_8"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/size_6">
+
+                        <TextView
+                            style="@style/TextVIew.black.13.mbr_item"
+                            android:drawableLeft="@mipmap/ic_mbr_share_black_14"
+                            android:drawableStart="@mipmap/ic_mbr_share_black_14"
+                            android:text="@string/layout_mbr_item_share" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview_share"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/size_16"
+                            android:layout_marginLeft="@dimen/size_8"
+                            android:layout_marginStart="@dimen/size_8"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginTop="@dimen/size_6">
+
+                        <TextView
+                            style="@style/TextVIew.black.13.mbr_item"
+                            android:drawableLeft="@mipmap/ic_mbr_create_by_black_14"
+                            android:drawableStart="@mipmap/ic_mbr_create_by_black_14"
+                            android:text="@string/layout_mbr_item_create_by" />
+
+                        <include
+                            android:id="@+id/layout_3"
+                            layout="@layout/item_avatar_16"
+                            android:layout_width="@dimen/size_16"
+                            android:layout_height="@dimen/size_16"
+                            android:layout_marginLeft="@dimen/size_8"
+                            android:layout_marginStart="@dimen/size_8" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

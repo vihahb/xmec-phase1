@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xtelsolution.xmec.view.widget.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.xtelsolution.xmec.view.activity.rate.RatesActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/round_layout_background"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/size_8"
+        app:cardElevation="@dimen/size_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_100"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/TextVIew.white.16"
+                android:background="@drawable/background_dialog_title"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size_16"
+                android:paddingTop="@dimen/size_16"
+                android:text="@string/rating" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0_5"
+                android:background="@color/login_text" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.xtelsolution.xmec.view.widget.HeightWrappingViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.xtelsolution.xmec.view.widget.HeightWrappingViewPager>
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/size_56"
+                    android:gravity="center"
+                    app:ci_drawable="@drawable/dot_indicator"
+                    app:ci_drawable_unselected="@drawable/dot_indicator_unselected"
+                    app:ci_gravity="center" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</com.xtelsolution.xmec.view.widget.CustomScrollView>
+

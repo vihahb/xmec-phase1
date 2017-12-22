@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/size_16"
+    android:layout_marginStart="@dimen/size_16"
+    android:layout_marginRight="@dimen/size_16"
+    android:layout_marginEnd="@dimen/size_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/size_56"
+            android:layout_height="@dimen/size_56"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/outline_circle_blue_0_5"
+            app:layout_anchor="@+id/bg_hospital"
+            app:layout_anchorGravity="right|bottom">
+
+            <com.xtelsolution.xmec.view.widget.RoundImage
+                android:id="@+id/img_avatar_rate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_4"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                android:src="@mipmap/im_docter" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/tv_name_rate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên user rate"
+                    android:textColor="@color/black_75"
+                    android:textSize="@dimen/font_16" />
+                <TextView
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:id="@+id/tv_time_rate"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="11/12/2017 03:50"
+                    android:textColor="@color/black_75"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rt_user_rate"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2.5"
+                android:stepSize="1"
+                android:isIndicator="true"
+                app:mrb_progressTint="@color/colorPrimaryDark"
+                app:mrb_secondaryProgressTint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tv_content_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is content rated user!"
+                android:textColor="@color/black_75"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/colorPrimaryDark"/>
+</LinearLayout>

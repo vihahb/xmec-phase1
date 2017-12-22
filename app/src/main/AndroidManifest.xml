@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xtelsolution.xmec">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACTION_TIME_CHANGE" />
+
+    <application
+        android:name="com.xtelsolution.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_v1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.login.SplashScreen"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="cat.ereza.customactivityoncrash.RESTART" />
+                <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.login.SlideViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.mbr.MbrCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.mbr.MbrUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.ResizeImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.mbr.FriendSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.hr.HrCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.hr.SearchDiseaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.hr.AddDrugActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.hr.CreateDrugActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.hr.UpdateDrugActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.detailhr.DetailHrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.hr.UpdateHrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.schedule.CreateScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.detailhr.ViewImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.schedule.AddDrugScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.schedule.UpdateDrugScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.schedule.DetailDrugScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+
+                <!-- <intent-filter> -->
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+                <!-- </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".view.activity.news.DetailNewsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_detail_news"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.hr.DetailDrugActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.notification.NotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SDK -->
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppLoginTheme"
+            tools:replace="android:theme" />
+        <!-- End SDK -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0162a22bd43e04c86301065afbea492782c74db3" />
+        <!-- Firebase -->
+        <!-- [START firebase_service] -->
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <!-- End Firebase -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".view.activity.webview.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.schedule.DetailScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.schedule.UpdateScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.share.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.sharelink.ShareLinkListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.edit.EditShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog.Custom" />
+        <activity
+            android:name=".view.activity.edit.EditLinkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog.Custom" />
+        <activity
+            android:name=".view.activity.drug.DrugDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.disease.DiseaseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.hospitalInfo.HospitalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.account.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.account.ChangePassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.ReminderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Transparent" />
+        <activity
+            android:name=".view.activity.mapview.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <!-- Thông báo -->
+        <service
+            android:name=".reminder.service.ReminderService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".reminder.receiver.ReminderReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".reminder.receiver.TimeChangedReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <receiver -->
+        <!-- android:name="com.xtelsolution.xmec.receive.MBRReceive" -->
+        <!-- android:exported="false" /> -->
+        <!-- Kết thúc thông báo -->
+
+        <activity
+            android:name=".view.activity.rate.RatesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.hospitalInfo.RatedInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.share.DetailShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.share.ListShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name=".view.activity.news.DetailNewsPostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_detai_news_post"
+            android:theme="@style/FullscreenTheme"/>
+        <activity android:name=".view.activity.setting.SettingActivity"/>
+    </application>
+
+</manifest>

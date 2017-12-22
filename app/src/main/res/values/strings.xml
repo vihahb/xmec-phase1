@@ -1,0 +1,742 @@
+<resources>
+    <string name="app_name">xMec</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="FACEBOOK_APP_ID">1851247128486694</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">81a1002ad50275fa6ddf658fa6a0755f</string>
+
+    <!-- Activity -->
+    <string name="title_activity_mbr">Y bạ</string>
+    <string name="title_activity_mbr_create">Tạo y bạ</string>
+    <string name="title_activity_mbr_update">Cập nhật y bạ</string>
+    <string name="title_activity_hr_create">Tạo sổ khám bệnh</string>
+    <string name="title_activity_hr_add_drug">Thêm thuốc</string>
+    <string name="title_activity_hr_list_drug">Thêm thuốc</string>
+    <string name="title_activity_detail_news">DetailNewsActivity</string>
+    <string name="title_activity_account">Quản lý tài khoản</string>
+
+    <!-- Layout -->
+    <string name="layout_disagree">Hủy bỏ</string>
+    <string name="layout_agree">Đồng ý</string>
+    <string name="layout_ok">OK</string>
+    <string name="layout_please_wait">Vui lòng chờ</string>
+    <string name="layout_empty">Không có dữ liệu</string>
+    <string name="layout_not_update">Chưa cập nhật</string>
+    <string name="layout_updating">Đang cập nhật</string>
+
+    <!-- Shared -->
+    <string name="shared_with">Đã chia sẻ với:</string>
+    <string name="shared_from">Chia sẻ từ:</string>
+    <string name="shared_title">ĐÃ CHIA SẺ</string>
+    <string name="shared_time_title">THỜI ĐIỂM CHIA SẺ</string>
+    <string name="shared_time_content">Thời điểm chia sẻ</string>
+
+    <!-- Share Main -->
+    <string name="layout_shared">Đã chia sẻ</string>
+    <string name="layout_be_shared">Được chia sẻ</string>
+
+    <!-- Change pass -->
+    <string name="layout_pass_title">ĐỔI LẠI MẬT KHẨU</string>
+    <string name="layout_pass_old">Nhập mật khẩu cũ</string>
+    <string name="layout_pass_new">Nhập mật khẩu mới</string>
+    <string name="layout_pass_again">Nhập lại mật khẩu mới</string>
+    <string name="layout_pass_change">Đổi</string>
+
+    <!-- Account -->
+    <string name="layout_account_username">Họ và tên</string>
+    <string name="layout_account_phonenumber">Số điện thoại</string>
+    <string name="layout_account_change_pass">Đổi mật khẩu</string>
+
+    <!-- SlideView -->
+    <string name="layout_sv_login_by_phone">Đăng nhập bằng số điện thoại</string>
+
+    <string name="layout_sv_title_1">QUẢN LÝ Y BẠ THÔNG MINH</string>
+    <string name="layout_sv_title_2">LIÊN KẾT VÀ CHIA SẺ</string>
+    <string name="layout_sv_title_3">LỘ TRÌNH ĐIỀU TRỊ</string>
+    <string name="layout_sv_title_4">TRA CỨU BỆNH, THUỐC NHANH CHÓNG</string>
+    <string name="layout_sv_title_5">LỊCH NHẮC NHỞ UỐNG TIỆN LỢI</string>
+
+    <string name="layout_sv_content_1">Cung cấp đầy đủ thông tin y bạ cho người dùng
+        liên kết các tài khoản tiện lợi</string>
+    <string name="layout_sv_content_2">Cung cấp đầy đủ thông tin y bạ cho người dùng
+        liên kết các tài khoản tiện lợi</string>
+    <string name="layout_sv_content_3">Cung cấp đầy đủ thông tin y bạ cho người dùng
+        liên kết các tài khoản tiện lợi</string>
+    <string name="layout_sv_content_4">Cung cấp đầy đủ thông tin tra cứu bệnh,
+        thuốc nhanh chính xác</string>
+    <string name="layout_sv_content_5">Lịch uống thuốc tiện lợi
+        giúp bạn không quên mất giờ uống thuốc của mình</string>
+
+    <!-- Login -->
+    <string name="layout_lg_login">Đăng nhập</string>
+    <string name="layout_lg_register">Đăng ký</string>
+    <string name="layout_lg_forgot_pass">Quên mật khẩu?</string>
+    <string name="layout_lg_phone">Số điện thoại</string>
+    <string name="layout_lg_password">Nhập mật khẩu</string>
+
+    <!-- Register -->
+    <string name="layout_rg_name">Họ tên</string>
+    <string name="layout_rg_phone">Số điện thoại</string>
+    <string name="layout_rg_password">Mật khẩu</string>
+    <string name="layout_rg_password_again">Nhập lại mật khẩu</string>
+    <string name="layout_rg_register">Đăng ký</string>
+
+    <!-- Mbr -->
+    <string name="layout_mbr_view_only">Chỉ xem</string>
+    <string name="layout_mbr_view_and_edit">Xem và sửa</string>
+
+    <!-- Mbr Create -->
+    <string name="layout_mbr_create_add">Thêm y bạ</string>
+    <string name="layout_mbr_create_name">Họ và tên</string>
+    <string name="layout_mbr_create_gender">Giới tính</string>
+    <string name="layout_mbr_create_date">Ngày sinh</string>
+    <string name="layout_mbr_create_relationship">Quan hệ</string>
+    <string name="layout_mbr_create_link">Tài khoản liên kết</string>
+    <string name="layout_mbr_create">Tạo y bạ</string>
+
+    <!-- Mbr Update -->
+    <string name="layout_mbr_update">Cập nhật y bạ</string>
+    <string name="layout_mbr_delete">Xóa y bạ</string>
+
+    <!-- Search Friend -->
+    <string name="layout_sf_link_title">LIÊN KẾT</string>
+    <string name="layout_sf_link">Liên kết</string>
+    <string name="layout_sf_search">Tìm kiếm</string>
+    <string name="layout_sf_search_by_phone">Tìm kiếm bằng số điện thoại</string>
+    <string name="layout_sf_view_only">Chỉ xem</string>
+    <string name="layout_sf_view_and_edt">Xem và sửa</string>
+    <string name="layout_sf_delete">Xóa</string>
+    <string name="layout_sf_cancel">Hủy</string>
+    <string name="layout_sf_close">Đóng</string>
+
+    <!-- Mbr -->
+    <string name="layout_mbr_item_link">Liên kết:</string>
+    <string name="layout_mbr_item_share">Đã chia sẻ:</string>
+    <string name="layout_mbr_item_create_by">Tạo bởi:</string>
+    <string name="layout_mbr_item_health_records">Danh sách sổ điều trị</string>
+
+    <!-- Health Records -->
+    <string name="layout_hr_start">Bắt đầu:</string>
+    <string name="layout_hr_end">Kết thúc:</string>
+    <string name="layout_hr_disease">Tên bệnh:</string>
+    <string name="layout_hr_list_empty">Danh sách trống</string>
+    <string name="layout_hr_push">(nhấn</string>
+    <string name="layout_hr_to_add">để thêm danh sách)</string>
+    <string name="layout_hr_continue_trearment">Tiếp tục đợt điều trị</string>
+    <string name="layout_hr_end_trearment">Kết thúc đợt điều trị</string>
+    <string name="layout_hr_edit">Sửa</string>
+    <string name="layout_hr_delete">Xóa</string>
+
+    <!-- Health Record Create -->
+    <string name="layout_hr_create_hr_name">Tên sổ khám</string>
+    <string name="layout_hr_create_sick_name">Tên bệnh</string>
+    <string name="layout_hr_create_start_date">Ngày bắt đầu</string>
+    <string name="layout_hr_create_note">Ghi chú</string>
+    <string name="layout_hr_create_hospital">Cơ sở y tế</string>
+    <string name="layout_hr_create_doctor_name">Bác sĩ</string>
+    <string name="layout_hr_create_collapse">Thu gọn</string>
+    <string name="layout_hr_create_expand">Mở rộng</string>
+    <string name="layout_hr_create_continue">Tiếp tục</string>
+
+    <!-- Disease -->
+    <string name="layout_disease_name">Tên bệnh</string>
+    <string name="layout_disease_add_disease">THÊM BỆNH</string>
+    <string name="layout_disease_cancel">Hủy</string>
+    <string name="layout_disease_add">Thêm</string>
+
+    <!-- HR Add Drug -->
+    <string name="layout_hr_add_drug_note">Ghi chú:</string>
+    <string name="layout_hr_ad_list_drug">Danh sách thuốc</string>
+    <string name="layout_hr_ad_add_drug">THÊM THUỐC</string>
+
+    <!-- Create Drug -->
+    <string name="layout_create_drug">THÊM THUỐC</string>
+    <string name="layout_create_drug_name">Tên thuốc</string>
+    <string name="layout_create_drug_note">Ghi chú</string>
+
+    <!-- Update Drug -->
+    <string name="layout_update_drug">SỬA</string>
+    <string name="layout_update_drug_update">Cập nhật</string>
+    <string name="layout_search_drug">Tìm kiếm thuốc</string>
+    <string name="layout_search_drug_best">Thuốc được tìm kiếm nhiều nhất </string>
+    <string name="layout_searched_drug">Thuốc được tìm kiếm </string>
+    <string name="layout_search_best">Bệnh được tìm kiếm nhiều nhất</string>
+    <!-- Overview HealthRecord -->
+    <string name="layout_ohr_image">Hình ảnh</string>
+
+    <string name="layout_search_drug_edt">Nhập thuốc bạn cần tìm</string>
+    <string name="layout_search_disease_edt">Nhập bệnh bạn cần tìm</string>
+    <string name="layout_search_drug_title">Tìm kiếm thuốc</string>
+    <string name="layout_search_disease_title">Tìm kiếm bệnh</string>
+
+    <!-- Alarm -->
+    <string name="layout_alarm_schedule">THÔNG BÁO LỊCH UỐNG THUỐC</string>
+    <string name="layout_alarm_repeat">NHẮC LẠI</string>
+    <string name="layout_alarm_name">Tên lịch nhắc</string>
+    <string name="layout_alarm_time">Thời gian</string>
+    <string name="layout_alarm_minute">phút</string>
+    <string name="layout_alarm_5_minute">5 phút</string>
+    <string name="layout_alarm_10_minute">10 phút</string>
+    <string name="layout_alarm_15_minute">15 phút</string>
+    <string name="layout_alarm_brn_repeat">Nhắc lại</string>
+    <string name="layout_alarm_brn_detail">Chi tiết</string>
+    <string name="layout_alarm_brn_close">Đóng</string>
+    <string name="layout_alarm_brn_cancel">Hủy</string>
+    <string name="layout_alarm_brn_done">Xong</string>
+
+
+    <!-- Menu -->
+    <string name="menu_navigation_mbr">Y bạ</string>
+    <string name="menu_navigation_infomation">Tin tức</string>
+    <string name="menu_navigation_searching_sick">Tra cứu bệnh</string>
+    <string name="menu_navigation_searching_medicine">Tra cứu thuốc</string>
+    <string name="menu_navigation_medical_facility">Tìm kiếm cơ sở y tế</string>
+    <string name="menu_navigation_share">Chia sẻ và tư vấn</string>
+    <string name="menu_navigation_setting">Cài đặt</string>
+    <string name="menu_navigation_logout">Đăng xuất</string>
+
+    <!-- Account -->
+
+    <!-- home -->
+    <string name="menu_home_share">Chia sẻ</string>
+    <string name="menu_home_notify">Thông báo</string>
+
+    <!-- Resize Image -->
+    <string name="menu_resize_image_rota">Xoa phải</string>
+    <string name="menu_resize_done">Chọn</string>
+
+    <!-- Add Drug -->
+    <string name="menu_hr_add_drug_done">Hoàn thành</string>
+    <string name="menu_hr_add_drug_skip">Bỏ qua</string>
+
+    <!-- Health Record -->
+    <string name="menu_hr_edit">Sửa</string>
+
+    <!-- Schedule -->
+    <string name="menu_schedule_continue">Tiếp</string>
+    <string name="menu_schedule_save">Lưu</string>
+
+    <!-- Mbr -->
+    <string name="menu_mbr_delete">Xóa</string>
+
+    <!-- Dialog -->
+    <string name="dialog_noti">THÔNG BÁO</string>
+
+    <!-- Login -->
+    <string name="dialog_lg_change_password">ĐỔI MẬT KHẨU</string>
+    <string name="dialog_lg_input_phone">Nhập số điện thoại</string>
+    <string name="dialog_lg_cancel">Hủy</string>
+    <string name="dialog_lg_continue">Tiếp tục</string>
+    <string name="dialog_lg_input_new_pasword">Nhập mật khẩu mới</string>
+    <string name="dialog_lg_done">Xong</string>
+
+
+    <!-- Message -->
+    <string name="message_noti">Thông báo</string>
+    <string name="message_back_press_to_exit">Nhấn back lần nữa để thoát app</string>
+    <string name="message_can_not_request">Không thể kết nối tới Server</string>
+    <string name="message_select_picture">Chọn ảnh</string>
+    <string name="message_not_allow_permission">Một số tính năng sẽ không thể thực hiện do bạn chưa cấp quyền</string>
+    <string name="message_need_allow_permission">Ứng dụng sẽ gợi ý số điện thoại mà bạn tìm kiếm. Vui lòng cấp quyền trong cài đặt hệ thống để sử dụng tính năng này!</string>
+    <string name="message_overlays">Để ứng dụng có thể nhắc nhở bạn một cách hiệu quả nhất, vui lòng cho phép ứng dụng hiển thị lên trên các ứng dụng khác</string>
+    <string name="message_not_perrmission_to_use">Bạn không có quyền sử dụng chức năng này</string>
+
+    <!-- Shared -->
+    <string name="message_shared_delete">Bạn muốn xóa chia sẻ này?</string>
+
+    <!-- Login -->
+    <string name="message_lg_active">Tài khoản của bạn chưa được kích hoạt, bạn có muốn kích hoạt tài khoản?</string>
+
+    <!-- Create Account -->
+    <string name="message_ca_error_link_try_again">Liên kết tài khoản y bạ không thành công. Bạn có muốn thử lại?</string>
+
+    <!-- Mbr -->
+    <string name="message_mbr_delete">Bạn muốn xóa y bạ này?</string>
+    <string name="message_mbr_delete_hr">Bạn muốn xóa sổ khám bệnh này?</string>
+
+    <!-- Hr Create -->
+    <string name="message_hr_create_error_diseae">Cập nhật tên bệnh không thành công, bạn có muốn thử lại?</string>
+    <string name="message_hr_create_error_image">Cập nhật ảnh không thành công, bạn có muốn thử lại?</string>
+
+    <!-- Create Drug -->
+    <string name="message_create_drug_error_image">Cập nhật ảnh không thành công, bạn có muốn thử lại?</string>
+
+    <!-- Add Drug -->
+    <string name="message_add_drug_delete_drug">Bạn chắc chắn muốn xóa thuốc này?</string>
+
+
+    <!-- Doing -->
+    <string name="setting">Cài đặt</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="ok">Đồng ý</string>
+    <string name="doing_update">Đang cập nhật…</string>
+    <string name="doing_do">Đang thực hiện…</string>
+    <string name="doing_load_data">Đang tải dữ liệu…</string>
+    <string name="doing_upload_image">Đang tải ảnh…</string>
+
+    <!-- Shared -->
+    <string name="doing_share_delete">Đang xóa chia sẻ…</string>
+
+    <!-- Password -->
+    <string name="doing_change_pass">Đang đổi mật khẩu…</string>
+
+    <!-- Account -->
+    <string name="doing_account_update">Đang cập nhật…</string>
+
+    <!-- Login -->
+    <string name="doing_reset_pass">Đang đổi mật khẩu…</string>
+
+    <!-- Register -->
+    <string name="doing_register">Đang thực hiện đăng ký…</string>
+    <string name="doing_active">Đang kích hoạt tài khoản…</string>
+    <string name="doing_login">Đang đăng nhập…</string>
+
+    <!-- Mbr -->
+    <string name="doing_mbr_create">Đang tạo y bạ…</string>
+    <string name="doing_mbr_link">Đang liên kết y bạ…</string>
+    <string name="doing_mbr_delete">Đang xóa y bạ…</string>
+    <string name="doing_mbr_end_treatment">Đang xóa y bạ…</string>
+    <string name="doing_mbr_delete_hr">Đang xóa sổ khám bệnh…</string>
+
+    <!-- Hr Create -->
+    <string name="doing_hr_create">Đang tạo sổ khám bệnh…</string>
+    <string name="doing_hr_create_disease">Đang thêm bệnh…</string>
+    <string name="doing_hr_create_image">Đang thêm ảnh…</string>
+
+    <!-- Hr Create -->
+    <string name="doing_hr_update">Đang cập nhật khám bệnh…</string>
+    <string name="doing_hr_update_disease">Đang cập nhật bệnh…</string>
+    <string name="doing_hr_update_image">Đang cập nhật ảnh…</string>
+
+    <!-- Create Drug -->
+    <string name="doing_create_drug">Đang thêm thuốc…</string>
+    <string name="doing_update_drug">Đang cập nhật thuốc…</string>
+
+    <!-- Add drug -->
+    <string name="doing_add_drug_delete_drug">Đang xóa thuốc…</string>
+
+
+    <!-- Success -->
+
+    <!-- Shared -->
+    <string name="success_share_delete">Xóa chia sẻ thành công</string>
+
+    <!-- Home -->
+    <string name="success_home_update_avatar">Cập nhật ảnh đại diện thành công</string>
+
+    <!-- Password -->
+    <string name="success_change_pass">Đổi mật khẩu thành công</string>
+
+    <!-- Account -->
+    <string name="success_account_upload_image">Tải ảnh thành công</string>
+    <string name="success_account_info">Cập nhật thành công</string>
+    <string name="success_account_pass">Đổi mật khẩu thành công</string>
+
+    <!-- Login -->
+    <string name="success_lg_active">Kích hoạt tài khoản thành công</string>
+    <string name="success_lg_reset">Đổi mật khẩu thành công</string>
+
+    <!-- Register -->
+    <string name="success_register">Đăng ký tài khoản thành công. Vui lòng kích hoạt tài khoản</string>
+    <string name="success_active">Kích hoạt tài khoản thành công</string>
+
+    <!-- Mbr Create -->
+    <string name="success_mbr_create">Tạo y bạ thành công</string>
+
+    <!-- Mbr Update -->
+    <string name="success_mbr_update">Cập nhật y bạ thành công</string>
+
+    <!-- Schedule -->
+    <string name="success_schedule_delete">Xóa sổ khám thành công</string>
+    <string name="success_schedule_end_treatment">Đã kết thúc đợt điều trị</string>
+    <string name="success_schedule_continue_treatment">Tiếp tục đợt điều trị thành công</string>
+
+    <!-- Add Drug -->
+    <string name="success_add_drug_delete_drug">Xóa thuốc thành công</string>
+
+    <!-- Create Drug -->
+    <string name="success_create_drug">Thêm thuốc thành công</string>
+
+    <!-- Update Drug -->
+    <string name="success_update_drug">Cập nhật thuốc thành công</string>
+
+    <!-- Update Hr -->
+    <string name="success_update_hr">Cập nhật sổ khám bệnh thành công</string>
+
+
+    <!-- Error -->
+    <string name="error_try_again">Có lỗi xảy ra. Vui lòng thử lại</string>
+    <string name="error_error_click_to_try_again"><![CDATA[Có lỗi xảy ra<br><b>Chạm vào để thử lại</b>]]> </string>
+    <string name="error_no_internet">Vui lòng kiểm tra kết nối mạng</string>
+    <string name="error_no_internet_try_later">Không có kết nối mạng. Vui lòng kiểm tra kết nối mạng và thử lại</string>
+    <string name="error_no_internet_try_again"><![CDATA[Không có kết nối mạng<br><b>Xin vui lòng kiểm tra và thử lại</b>]]> </string>
+    <string name="error_no_internet_click_to_try_again"><![CDATA[Không có kết nối mạng<br><b>Chạm vào để thử lại</b>]]> </string>
+    <string name="error_unknow">Hệ thống bận\nVui lòng thử lại</string>
+    <string name="error_permission_location">Bạn cần cấp quyền cho ứng dụng truy cập vào vị trí để có thể nhìn thấy cơ sở y tế trên bản đồ</string>
+    <string name="error_off_location">Cần bật kết nối GPS để thấy vị trí của bạn</string>
+    <string name="error_not_allow_permission">Không thể thực hiện do bạn chưa cấp quyền</string>
+    <string name="error_emty_search_hospital">Không tìm thấy %s quanh đây</string>
+
+    <!-- Shared -->
+    <string name="error_share_delete">Xóa chia sẻ không thành công</string>
+
+    <!-- Password -->
+    <string name="error_pass_input">Vui lòng nhập mật khẩu</string>
+    <string name="error_pass_invalid">Mật khẩu phải từ 6 – 20 ký tự và không chứa khoảng trắng</string>
+    <string name="error_pass_equal">Mật khẩu không khớp</string>
+    <string name="error_pass_wrong">Sai mật khẩu</string>
+
+    <!-- Account -->
+    <string name="error_account_name">Vui lòng nhập tên</string>
+    <string name="error_account_upload_image">Tải ảnh không thành công</string>
+
+    <!-- Login -->
+    <string name="error_lg_input_phone">Vui lòng nhập số điện thoại</string>
+    <string name="error_lg_input_password">Vui lòng nhập mật khẩu</string>
+    <string name="error_lg_invalid_phone">Số điện thoại phải là chữ số và từ 10 đến 15 ký tự</string>
+    <string name="error_lg_invalid_password">Mật khẩu phải từ 6 – 20 ký tự và không chứa khoảng trắng</string>
+    <string name="error_lg_active">Kích hoạt tài khoản không thành công</string>
+    <string name="error_lg_validate">Tài khoản không tồn tại</string>
+    <string name="error_lg_reset">Đổi mật khẩu không thành công</string>
+
+    <!-- Home -->
+    <string name="error_home_logout">Đăng xuất không thành công</string>
+
+    <!-- Register -->
+    <string name="error_rg_input_name">Vui lòng nhập họ tên</string>
+    <string name="error_rg_input_phone">Vui lòng nhập số điện thoại</string>
+    <string name="error_rg_input_password">Vui lòng nhập mật khẩu</string>
+    <string name="error_rg_input_password_again">Vui lòng nhập lại mật khẩu</string>
+    <string name="error_rg_invalid_phone">Số điện thoại phải là chữ số và từ 10 đến 15 ký tự</string>
+    <string name="error_rg_invalid_password">Mật khẩu phải có từ 6 – 20 ký tự và không chứa khoảng trắng</string>
+    <string name="error_rg_invalid_password_again">Mật khẩu phải có từ 6 – 20 ký tự và không chứa khoảng trắng</string>
+    <string name="error_rg_not_equal_password">Mật khẩu không trùng khớp</string>
+    <string name="error_rg_not_phone">Số điện thoại không hợp lệ</string>
+    <string name="error_register">Đăng ký tài khoản không thành công</string>
+    <string name="error_active">Kích hoạt tài khoản không thành công</string>
+
+    <!-- Mbr Create -->
+    <string name="error_mbr_create_avatar">Vui lòng chọn ảnh đại diện</string>
+    <string name="error_mbr_create_name">Vui lòng nhập họ tên</string>
+    <string name="error_mbr_create_gender">Vui lòng chọn giới tính</string>
+    <string name="error_mbr_create_birthday">Vui lòng chọn ngày sinh</string>
+    <string name="error_mbr_create_relationship">Quan hệ không hợp lệ</string>
+    <string name="error_mbr_create_invalide_birthday">Ngày sinh không hợp lệ</string>
+    <string name="error_mbr_share_over_5">Bạn không thể chia sẻ quá 5 người</string>
+    <string name="error_mbr_share_account_exists">Tài khoản đã được chọn</string>
+
+    <!-- Search Friend -->
+    <string name="error_sf_select_friend">Vui lòng chọn tài khoản</string>
+    <string name="error_sf_input_phone">Vui lòng nhập số điện thoại</string>
+    <string name="error_sf_invalid_phone">Số điện thoại phải là chữ số và từ 10 đến 15 ký tự</string>
+    <string name="error_sf_not_found">Không tìm thấy tài khoản</string>
+
+    <!-- Search Disease -->
+    <string name="error_sd_select">Vui lòng nhập tên bệnh</string>
+    <string name="error_sd_not_found">Không tìm thấy kết quả phù hợp</string>
+
+    <!-- Hr Create -->
+    <string name="error_sr_search_name">Vui lòng nhập tên sổ khám bệnh</string>
+    <string name="error_sr_search_disease">Vui lòng nhập tên bệnh</string>
+    <string name="error_sr_search_start_date">Vui lòng chọn ngày bắt đầu</string>
+
+    <!-- Create Drug -->
+    <string name="error_create_drug_max_image">Bạn chỉ được chọn tối đa 3 ảnh</string>
+    <string name="error_create_drug_name">Vui lòng nhập tên</string>
+
+    <!-- Add Drug -->
+    <string name="error_add_drug_select_drug">Vui lòng thêm thuốc vào sổ khám</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--NewsFragment-->
+    <string name="title_news">Tin tức</string>
+    <string name="search_recent_drug">Thuốc được tìm kiếm gần đây</string>
+
+
+    <!--Notify Activity-->
+    <string name="title_notify">Thông báo</string>
+    <string name="loading_notify">Đang tải…</string>
+
+    <!-- Array -->
+    <string-array name="gender">
+        <item>Nữ</item>
+        <item>Nam</item>
+    </string-array>
+
+    <string-array name="male_relationship">
+        <item>Tôi</item>
+        <item>Chồng</item>
+        <item>Bố</item>
+        <item>Con</item>
+        <item>Ông</item>
+        <item>Cháu</item>
+        <item>Bệnh nhân</item>
+    </string-array>
+
+    <string-array name="female_relationship">
+        <item>Tôi</item>
+        <item>Vợ</item>
+        <item>Mẹ</item>
+        <item>Con</item>
+        <item>Bà</item>
+        <item>Cháu</item>
+        <item>Bệnh nhân</item>
+    </string-array>
+
+    <string-array name="timePerDay">
+        <item>1 lần / ngày</item>
+        <item>2 lần / ngày</item>
+        <item>3 lần / ngày</item>
+        <item>4 lần / ngày</item>
+        <item>5 lần / ngày</item>
+        <item>1 giờ / 1 lần</item>
+        <item>2 giờ / 1 lần</item>
+        <item>3 giờ / 1 lần</item>
+        <item>4 giờ / 1 lần</item>
+        <item>6 giờ / 1 lần</item>
+        <item>8 giờ / 1 lần</item>
+        <item>12 giờ / 1 lần</item>
+    </string-array>
+
+    <!-- Detail hr -->
+    <string-array name="detail_hr_tab">
+        <item>Tổng quan</item>
+        <item>Thuốc</item>
+        <item>Lịch nhắc</item>
+    </string-array>
+
+    <!-- Schedule -->
+    <string-array name="drug_unit">
+        <item>Viên</item>
+        <item>Thìa</item>
+        <item>Gói</item>
+        <item>Mg</item>
+    </string-array>
+
+    <!--Hospital-->
+    <string name="title_activity_detail_hospital">Thông tin cơ sở y tế</string>
+    <string name="title_share_an">Chia sẻ và tư vấn</string>
+    <string name="title_search_hospital">Cơ sở y tế</string>
+    <string name="title_search">Tìm kiếm thuốc</string>
+    <string name="title_search_disease">Tìm kiếm bệnh</string>
+
+    <string name="action_clear">Hủy</string>
+    <string name="action_open">Tới thông báo</string>
+
+    <string name="share_to_now">Chia sẻ tới thời điểm hiện tại</string>
+    <string name="share_to_future">Chia sẻ tới thời điểm tương lai</string>
+    <string name="share_action">Chia sẻ</string>
+
+
+    <string name="layout_edit_link">SỬA LIÊN KẾT</string>
+    <string name="layout_edit_share">SỬA CHIA SẺ</string>
+
+    <string name="layout_search_disease">Bệnh được tìm kiếm</string>
+    <string name="layout_search_disease_recent">Bệnh được tìm kiếm gần đây</string>
+
+
+    <string name="message_utils_notification_title_template">Message utils: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="message_utils_notification_placeholder_text_template">You said %1$s and lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit
+        vel semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loading">Loading...</string>
+    <string name="not_yet">Chưa cập nhật!</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="rating">Đánh giá</string>
+    <string name="txt_myLocation">Vị trí của bạn</string>
+    <string name="error_internet">Không thể cập nhật dữ liệu thông báo. Sẽ cập nhật lại sau khi có mạng!</string>
+    <string name="mes_drug_recent_empty">Không có thuốc nào được tìm kiếm gần đây!</string>
+    <string name="mes_disease_recent_empty">Không có bệnh nào được tìm kiếm gần đây!</string>
+    <string name="not_disease_search">Không tìm thấy bệnh mà bạn tìm.</string>
+    <string name="need_login_use_feature">Vui lòng đăng nhập để sử dụng tính năng này</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_detai_news_post">DetaiNewsPostActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

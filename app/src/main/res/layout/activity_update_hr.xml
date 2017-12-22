@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xtelsolution.xmec.view.activity.hr.UpdateHrActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_1"
+                    style="@style/TextInputLayout.Hr_Create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_disease"
+                        style="@style/EditText.Black.Hr_Create"
+                        android:drawableLeft="@mipmap/ic_searching_sick_blue_24"
+                        android:drawableStart="@mipmap/ic_searching_sick_blue_24"
+                        android:focusable="false"
+                        android:hint="@string/layout_hr_create_sick_name"
+                        android:inputType="text"
+                        android:longClickable="false" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/layout_1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/size_4"
+                    android:layout_marginEnd="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_add_link_blue_24" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/layout_1"
+                    android:layout_marginEnd="@dimen/size_56"
+                    android:layout_marginLeft="@dimen/size_64"
+                    android:layout_marginRight="@dimen/size_56"
+                    android:layout_marginStart="@dimen/size_64"
+                    android:layout_marginTop="@dimen/size_18"
+                    android:nestedScrollingEnabled="false"
+                    tools:targetApi="lollipop" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_1"
+                style="@style/View.Horizontal.Blue.48"
+                android:layout_marginEnd="@dimen/size_16"
+                android:layout_marginLeft="@dimen/size_64"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginStart="@dimen/size_64" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Hr_Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_start_date"
+                    style="@style/EditText.Black.Hr_Create"
+                    android:drawableLeft="@mipmap/ic_hr_date_create_blue_24"
+                    android:drawableStart="@mipmap/ic_hr_date_create_blue_24"
+                    android:focusable="false"
+                    android:hint="@string/layout_hr_create_start_date"
+                    android:inputType="textCapSentences"
+                    android:longClickable="false" />
+
+                <View style="@style/View.Horizontal.Blue.Hr_Create" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_16">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/edt_note"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_mbr_edit_blue_24" />
+
+                <TextView
+                    android:id="@+id/txt_note"
+                    style="@style/TextVIew.black.13"
+                    android:layout_marginLeft="@dimen/size_50"
+                    android:layout_marginStart="@dimen/size_50"
+                    android:text="@string/layout_hr_create_note"
+                    android:textColor="@color/black_55" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_note"
+                    style="@style/EditText.Black.Hr_Create"
+                    android:layout_below="@+id/txt_note"
+                    android:layout_marginLeft="@dimen/size_50"
+                    android:layout_marginStart="@dimen/size_50"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:background="@drawable/outline_square_black_0_5"
+                    android:gravity="top|left|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="3"
+                    android:maxLines="8"
+                    android:padding="@dimen/size_8" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Hr_Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/edt_hospital"
+                    style="@style/EditText.Black.Hr_Create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:drawableLeft="@mipmap/ic_hr_hospital_blue_24"
+                    android:drawableStart="@mipmap/ic_hr_hospital_blue_24"
+                    android:hint="@string/layout_hr_create_hospital"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+                <View style="@style/View.Horizontal.Blue.Hr_Create" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Hr_Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_doctor"
+                    style="@style/EditText.Black.Hr_Create"
+                    android:drawableLeft="@mipmap/ic_hr_doctor_24"
+                    android:drawableStart="@mipmap/ic_hr_doctor_24"
+                    android:hint="@string/layout_hr_create_doctor_name"
+                    android:inputType="textCapWords|textMultiLine" />
+
+                <View style="@style/View.Horizontal.Blue.Hr_Create" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_expand_state"
+                style="@style/TextVIew.black.13"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_16"
+                android:text="@string/layout_ohr_image" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_48"
+                android:layout_marginEnd="@dimen/size_16"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_8" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

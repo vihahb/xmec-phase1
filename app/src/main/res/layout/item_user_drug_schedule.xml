@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16">
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_toLeftOf="@+id/img_image"
+            android:layout_toStartOf="@+id/img_image"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_drug_blue_18" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/TextVIew.black.16"
+                android:layout_alignTop="@+id/img_logo"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_toEndOf="@+id/img_logo"
+                android:layout_toRightOf="@+id/img_logo"
+                android:maxLines="2" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/TextVIew.blue.13"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@+id/txt_name"
+                android:layout_alignStart="@+id/txt_name"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginTop="@dimen/size_4"
+                android:text="Liều lượng:" />
+
+            <TextView
+                android:id="@+id/txt_note"
+                style="@style/TextVIew.black.13"
+                android:layout_alignEnd="@+id/txt_name"
+                android:layout_alignRight="@+id/txt_name"
+                android:layout_alignTop="@+id/txt_title"
+                android:layout_marginLeft="@dimen/size_8"
+                android:layout_marginStart="@dimen/size_8"
+                android:layout_toEndOf="@+id/txt_title"
+                android:layout_toRightOf="@+id/txt_title"
+                android:ellipsize="end"
+                android:maxLines="2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_image"
+            android:layout_width="@dimen/size_48"
+            android:layout_height="@dimen/size_40"
+            android:layout_toLeftOf="@+id/img_option"
+            android:layout_toStartOf="@+id/img_option"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/img_option"
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_alignBottom="@+id/layout_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/layout_1"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_option_blue_24" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_50"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_50"
+        android:background="@color/text_blue" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:fillViewport="true"
+    tools:context="com.xtelsolution.xmec.view.activity.hr.CreateDrugActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/TextVIew.white.16"
+            android:background="@drawable/background_dialog_title"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_16"
+            android:paddingTop="@dimen/size_24"
+            android:text="@string/layout_create_drug" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout.Drug_Create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edt_name"
+                style="@style/EditText.Black.Hr_Create"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:hint="@string/layout_create_drug_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/View.Horizontal.Blue" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayout.Drug_Create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_note"
+                style="@style/EditText.Black.Hr_Create"
+                android:layout_height="wrap_content"
+                android:hint="@string/layout_create_drug_note"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences" />
+
+            <View style="@style/View.Horizontal.Blue" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@color/login_dialog_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_disease_cancel" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/Button.blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_disease_add" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

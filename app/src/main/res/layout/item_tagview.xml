@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_32"
+    android:layout_marginBottom="@dimen/size_8"
+    android:background="@drawable/background_link_account"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.xtelsolution.xmec.view.widget.RoundImage
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/size_24"
+        android:layout_height="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size_4"
+        android:layout_marginLeft="@dimen/size_6"
+        android:layout_marginRight="@dimen/size_4"
+        android:layout_marginStart="@dimen/size_6"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/im_docter" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/TextVIew.white.13"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/size_8"
+        android:layout_marginLeft="@dimen/size_14"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginStart="@dimen/size_14"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="gsdgfs" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/img_delete"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/size_2"
+        android:layout_marginRight="@dimen/size_2"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/size_4"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_close_round_white_24" />
+</LinearLayout>

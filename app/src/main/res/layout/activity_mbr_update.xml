@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xtelsolution.xmec.view.activity.mbr.MbrUpdateActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_132">
+
+                <ImageView
+                    android:id="@+id/img_avatar_blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_10"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/size_100"
+                    android:layout_height="@dimen/size_100"
+                    android:layout_gravity="center"
+                    android:background="@drawable/outline_circle_blue_0_5">
+
+                    <com.xtelsolution.xmec.view.widget.RoundImage
+                        android:id="@+id/img_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/size_4"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop" />
+
+                    <ImageButton
+                        android:id="@+id/img_take_picture"
+                        android:layout_width="@dimen/size_28"
+                        android:layout_height="@dimen/size_28"
+                        android:layout_gravity="bottom|end|right"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_mbr_camera_24" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Mbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_name"
+                    style="@style/EditText.Black.YBa"
+                    android:drawableLeft="@mipmap/ic_name_blue_24"
+                    android:drawableStart="@mipmap/ic_name_blue_24"
+                    android:hint="@string/layout_mbr_create_name"
+                    android:inputType="textCapWords" />
+
+                <View style="@style/View.Horizontal.Blue.48" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_1"
+                    style="@style/TextInputLayout.Mbr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_gender"
+                        style="@style/EditText.Black.YBa"
+                        android:drawableLeft="@mipmap/ic_gender_blue_24"
+                        android:drawableStart="@mipmap/ic_gender_blue_24"
+                        android:hint="@string/layout_mbr_create_gender"
+                        android:inputType="text" />
+
+                    <View style="@style/View.Horizontal.Blue.48" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/layout_1"
+                    android:layout_alignTop="@+id/layout_1"
+                    android:layout_marginEnd="@dimen/size_16"
+                    android:layout_marginLeft="@dimen/size_48"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:layout_marginStart="@dimen/size_48" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Mbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_birthday"
+                    style="@style/EditText.Black.YBa"
+                    android:drawableLeft="@mipmap/ic_birthday_blue_24"
+                    android:drawableStart="@mipmap/ic_birthday_blue_24"
+                    android:focusable="false"
+                    android:hint="@string/layout_mbr_create_date"
+                    android:inputType="date"
+                    android:longClickable="false" />
+
+                <View style="@style/View.Horizontal.Blue.48" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_2"
+                    style="@style/TextInputLayout.Mbr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_relationship"
+                        style="@style/EditText.Black.YBa"
+                        android:drawableLeft="@mipmap/ic_relationship_blue_24"
+                        android:drawableStart="@mipmap/ic_relationship_blue_24"
+                        android:hint="@string/layout_mbr_create_relationship"
+                        android:inputType="text" />
+
+                    <View style="@style/View.Horizontal.Blue.48" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/layout_2"
+                    android:layout_alignTop="@+id/layout_2"
+                    android:layout_marginEnd="@dimen/size_16"
+                    android:layout_marginLeft="@dimen/size_48"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:layout_marginStart="@dimen/size_48"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_3"
+                    style="@style/TextInputLayout.Mbr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/edt_link"
+                        style="@style/EditText.Black.YBa"
+                        android:drawableLeft="@mipmap/ic_mbr_link_blue_24"
+                        android:drawableStart="@mipmap/ic_mbr_link_blue_24"
+                        android:focusable="false"
+                        android:hint="@string/layout_mbr_create_link"
+                        android:inputType="text"
+                        android:longClickable="false" />
+
+                    <View
+                        android:id="@+id/view_1"
+                        style="@style/View.Horizontal.Blue.48" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/layout_3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/size_4"
+                    android:layout_marginEnd="@dimen/size_16"
+                    android:layout_marginRight="@dimen/size_16"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_add_link_blue_24" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/layout_3"
+                    android:layout_marginEnd="@dimen/size_54"
+                    android:layout_marginLeft="@dimen/size_64"
+                    android:layout_marginRight="@dimen/size_56"
+                    android:layout_marginStart="@dimen/size_64"
+                    android:layout_marginTop="@dimen/size_18" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                style="@style/Button.white.Login"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginBottom="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_24"
+                android:text="@string/layout_mbr_update" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

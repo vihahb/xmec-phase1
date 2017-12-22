@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_4"
+    android:layout_marginTop="@dimen/size_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_16">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_200"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/titleNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="@dimen/size_8"
+            android:text="Tiêu đề"
+            android:textColor="@color/black_85"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:text="Tiêu đề"
+
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

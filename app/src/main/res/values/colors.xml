@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0098E2</color>
+    <color name="colorPrimaryDark">#0098E2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryDar_40">#660098E2</color>
+
+    <color name="toolbar_start">#00CAFF</color>
+    <color name="toolbar_end">#0098E2</color>
+
+    <color name="background_default">#F4F6F6</color>
+
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_55">#8CFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_85">#D9FFFFFF</color>
+    <color name="white_100">#FFFFFF</color>
+
+    <color name="black_5">#0D000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_15">#26000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_55">#8C000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_65">#A6000000</color>
+    <color name="black_75">#BF000000</color>
+    <color name="black_85">#D9000000</color>
+    <color name="black_100">#000000</color>
+
+    <color name="red_5">#0DED1C24</color>
+    <color name="red_10">#1AED1C24</color>
+    <color name="red_15">#26ED1C24</color>
+    <color name="red_20">#33ED1C24</color>
+    <color name="red_30">#4DED1C24</color>
+    <color name="red_40">#66ED1C24</color>
+    <color name="red_55">#8CED1C24</color>
+    <color name="red_60">#99ED1C24</color>
+    <color name="red_65">#A6ED1C24</color>
+    <color name="red_75">#BFED1C24</color>
+    <color name="red_85">#D9ED1C24</color>
+    <color name="red_100">#ED1C24</color>
+
+
+    <color name="blue_10">#1A439DF5</color>
+    <color name="blue_20">#33439DF5</color>
+    <color name="blue_40">#66439DF5</color>
+    <color name="blue_55">#8C439DF5</color>
+    <color name="blue_60">#99439DF5</color>
+    <color name="blue_75">#BF439DF5</color>
+    <color name="blue_85">#D9439DF5</color>
+    <color name="blue_100">#439DF5</color>
+
+    <color name="green_100">#0B8743</color>
+
+    <color name="gray">#F2F2F2</color>
+
+    <!-- Slide View -->
+    <color name="sv_dot_selected">#FFFFFF</color>
+    <color name="sv_dot_default">#28AAE1</color>
+
+    <color name="sv_background_1">#34C2F1</color>
+    <color name="sv_button_1">#00A551</color>
+    <color name="sv_button_1_press">#66C996</color>
+
+    <color name="sv_background_2">#6C08C4</color>
+    <color name="sv_button_2">#6C08C4</color>
+    <color name="sv_button_2_press">#A66ADB</color>
+
+    <color name="sv_background_3">#E01734</color>
+    <color name="sv_button_3">#E01734</color>
+    <color name="sv_button_3_press">#EC7385</color>
+
+    <color name="sv_background_4">#E87A0C</color>
+    <color name="sv_button_4">#E87A0C</color>
+    <color name="sv_button_4_press">#F1AF6D</color>
+
+    <color name="sv_background_5">#C90027</color>
+    <color name="sv_button_5">#C90027</color>
+    <color name="sv_button_5_press">#DE667D</color>
+
+    <color name="text_blue">#00A9FF</color>
+
+    <!-- Login -->
+    <color name="login_tabcolor">#0081C9</color>
+    <color name="login_text">#00A9FF</color>
+
+    <color name="login_button_start">#2A95D2</color>
+    <color name="login_button_end">#31C4F3</color>
+    <color name="login_button_start_press">#7FBFE4</color>
+    <color name="login_button_end_press">#83DBF7</color>
+
+    <color name="login_dialog_background">#F2F2F2</color>
+
+    <!-- Home -->
+    <color name="navigation_icon_checked">#FFFFFF</color>
+    <color name="navigation_icon_unchecked">#00A9FF</color>
+    <color name="navigation_text_checked">#FFFFFF</color>
+    <color name="navigation_text_unchecked">#8C000000</color>
+    <color name="navigation_background_qr">#06A94B</color>
+
+    <!-- Search Friend -->
+    <color name="sf_box">#54BCEB</color>
+
+    <!-- Mbr -->
+    <color name="mbr_fab">#06A94B</color>
+
+    <!-- Mbr Item -->
+    <color name="mbr_item_text_normal">#00A9FF</color>
+    <color name="mbr_item_text_checked">#FFFFFF</color>
+
+    <!--Notification-->
+    <color name="background_color">#FF6666</color>
+    <color name="accent_material_light_1">#f500b8</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

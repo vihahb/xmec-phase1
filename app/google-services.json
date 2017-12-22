@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "377245838708",
+    "firebase_url": "https://xmec-dae5a.firebaseio.com",
+    "project_id": "xmec-dae5a",
+    "storage_bucket": "xmec-dae5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377245838708:android:6f68e5e9c50ee46d",
+        "android_client_info": {
+          "package_name": "com.xtelsolution.xmec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377245838708-eostha9e9qjoskhfm9mu7ua3ludr1vqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xtelsolution.xmec",
+            "certificate_hash": "8a3ea64006dd81de35c2d81962b384130969b6f0"
+          }
+        },
+        {
+          "client_id": "377245838708-8bq4d0o91b10c3ctfr4ui65soun651gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xtelsolution.xmec",
+            "certificate_hash": "83fc36f3fd50ac94cd41ff467546d61b281b727a"
+          }
+        },
+        {
+          "client_id": "377245838708-72nehig9sv0i5iualh0jsh7rnlbbt388.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwPjO_8hI2u7JunSdOelDi3XuzsiFCTIA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377245838708-ejc69lna097bq839rp113r6uod73rr0d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xtel.xMec"
+              }
+            },
+            {
+              "client_id": "377245838708-72nehig9sv0i5iualh0jsh7rnlbbt388.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_75"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_100"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/TextVIew.blue.18"
+            android:gravity="center"
+            android:padding="@dimen/size_16"
+            android:text="@string/layout_edit_share" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/blue_100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size_8"
+            android:paddingEnd="@dimen/size_16"
+            android:paddingLeft="@dimen/size_16"
+            android:paddingRight="@dimen/size_16"
+            android:paddingStart="@dimen/size_16"
+            android:paddingTop="@dimen/size_8">
+
+            <FrameLayout
+                android:layout_width="@dimen/size_48"
+                android:layout_height="@dimen/size_48"
+                android:layout_gravity="center"
+                android:background="@drawable/outline_circle_blue_0_5">
+
+                <com.xtelsolution.xmec.view.widget.RoundImage
+                    android:id="@+id/img_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/size_2"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_small_avatar_default"/>
+
+                <View
+                    android:id="@+id/view_status"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_width="@dimen/size_12"
+                    android:layout_height="@dimen/size_12"
+                    android:layout_margin="@dimen/size_1"
+                    android:background="@drawable/background_circle_green" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_8"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_8"
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/TextVIew.black.16"
+                    android:textColor="@color/black_100" />
+
+                <TextView
+                    android:id="@+id/txt_birthday"
+                    style="@style/TextVIew.black.13"
+                    android:layout_marginTop="@dimen/size_4"
+                    android:drawableLeft="@mipmap/ic_mbr_birthday_black_16"
+                    android:drawablePadding="@dimen/size_12"
+                    android:drawableStart="@mipmap/ic_mbr_birthday_black_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            android:paddingEnd="@dimen/size_24"
+            android:paddingLeft="@dimen/size_24"
+            android:paddingRight="@dimen/size_24"
+            android:paddingStart="@dimen/size_24">
+
+            <RadioButton
+                android:id="@+id/rb_share_to_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingEnd="@dimen/size_0"
+                android:paddingLeft="@dimen/size_24"
+                android:paddingRight="@dimen/size_0"
+                android:paddingStart="@dimen/size_24"
+                android:text="@string/share_to_now"
+                android:textColor="@color/black_55"
+                android:theme="@style/Box_Blue" />
+
+            <RadioButton
+                android:id="@+id/rb_share_to_future"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/size_0"
+                android:paddingLeft="@dimen/size_24"
+                android:paddingRight="@dimen/size_0"
+                android:paddingStart="@dimen/size_24"
+                android:text="@string/share_to_future"
+                android:textColor="@color/black_55"
+                android:theme="@style/Box_Blue" />
+
+            <RadioButton
+                android:id="@+id/rb_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/size_0"
+                android:paddingLeft="@dimen/size_24"
+                android:paddingRight="@dimen/size_0"
+                android:paddingStart="@dimen/size_24"
+                android:text="@string/layout_sf_delete"
+                android:textColor="@color/black_55"
+                android:theme="@style/Box_Blue" />
+        </RadioGroup>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            android:indeterminate="true"
+            android:theme="@style/Box_Blue" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0_5"
+            android:background="@color/login_text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:background="@color/login_dialog_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_sf_close" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/Button.blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Lưu" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

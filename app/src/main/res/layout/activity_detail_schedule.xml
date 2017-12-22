@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.xtelsolution.xmec.view.activity.schedule.DetailScheduleActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_16"
+            android:paddingTop="@dimen/size_16">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_name"
+                    style="@style/EditText.Black.Schedule.Disable"
+                    android:drawableLeft="@mipmap/ic_noti_selected_24"
+                    android:drawablePadding="@dimen/size_16"
+                    android:drawableStart="@mipmap/ic_noti_selected_24"
+                    android:hint="Tên lịch nhắc"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+                <View style="@style/View.Horizontal.Blue" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_date"
+                    style="@style/EditText.Black.Schedule.Disable"
+                    android:drawableLeft="@mipmap/ic_hr_date_create_blue_24"
+                    android:drawablePadding="@dimen/size_16"
+                    android:drawableStart="@mipmap/ic_hr_date_create_blue_24"
+                    android:hint="Ngày bắt đầu"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+                <View style="@style/View.Horizontal.Blue" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextVIew.black.13.Detail_Schedule"
+                android:drawableLeft="@mipmap/ic_time_blue_24"
+                android:drawableStart="@mipmap/ic_time_blue_24"
+                android:text="Thời gian" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_time"
+                style="@style/TextVIew.black.16.Detail_Schedule"
+                android:layout_marginLeft="@dimen/size_56"
+                android:layout_marginStart="@dimen/size_56"
+                android:text="@string/app_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextVIew.black.13.Detail_Schedule"
+                android:drawableLeft="@mipmap/ic_ngay_uong_blue_24"
+                android:drawableStart="@mipmap/ic_ngay_uong_blue_24"
+                android:text="Ngày uống" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_ngay_uong"
+                style="@style/TextVIew.black.16.Detail_Schedule"
+                android:layout_marginLeft="@dimen/size_56"
+                android:layout_marginStart="@dimen/size_56"
+                android:text="@string/app_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextVIew.black.13.Detail_Schedule"
+                android:drawableLeft="@mipmap/ic_note_blue_24"
+                android:drawableStart="@mipmap/ic_note_blue_24"
+                android:text="Lưu ý" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_luu_y"
+                style="@style/TextVIew.black.16.Detail_Schedule"
+                android:layout_marginLeft="@dimen/size_56"
+                android:layout_marginStart="@dimen/size_56"
+                android:text="@string/app_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/TextVIew.black.13.Detail_Schedule"
+                android:drawableLeft="@mipmap/ic_gio_uong_blue_24"
+                android:drawableStart="@mipmap/ic_gio_uong_blue_24"
+                android:text="Giờ uống thuốc" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_16"
+                android:layout_marginLeft="@dimen/size_56"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginStart="@dimen/size_56"
+                android:layout_marginTop="@dimen/size_16" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_title"
+                style="@style/TextVIew.black.16.Detail_Schedule"
+                android:layout_marginTop="@dimen/size_16"
+                android:drawableLeft="@mipmap/ic_hr_list_blue_24"
+                android:drawableStart="@mipmap/ic_hr_list_blue_24"
+                android:text="Danh sách thuốc"
+                android:textColor="@color/black_100"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_24"
+                android:layout_marginTop="@dimen/size_8" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

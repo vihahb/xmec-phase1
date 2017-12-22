@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xtelsolution.xmec.view.activity.setting.SettingActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_scroll"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

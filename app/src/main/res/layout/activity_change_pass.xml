@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:orientation="vertical"
+    tools:context="com.xtelsolution.xmec.view.activity.account.ChangePassActivity">
+
+    <TextView
+        style="@style/TextVIew.white.16"
+        android:background="@drawable/background_dialog_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16"
+        android:text="@string/layout_pass_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_32"
+            android:paddingTop="@dimen/size_16">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Black.Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_pass_old"
+                    style="@style/EditText.Black.Password"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/layout_pass_old"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+
+                <View style="@style/View.Horizontal.Black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Black.Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_pass_new"
+                    style="@style/EditText.Black.Password"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="@string/layout_pass_new"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+
+                <View style="@style/View.Horizontal.Black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayout.Black.Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_pass_again"
+                    style="@style/EditText.Black.Password"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="@string/layout_pass_again"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+
+                <View style="@style/View.Horizontal.Black" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/login_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/login_dialog_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_disease_cancel" />
+
+        <View
+            android:layout_width="@dimen/size_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/login_text" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/Button.blue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_pass_change" />
+    </LinearLayout>
+</LinearLayout>

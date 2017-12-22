@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context="com.xtelsolution.xmec.view.activity.mbr.FriendSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_16"
+        android:background="@drawable/round_layout_background"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextVIew.blue.18"
+            android:gravity="center"
+            android:padding="@dimen/size_16"
+            android:text="@string/layout_sf_link_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/blue_100" />
+
+        <com.xtelsolution.xmec.view.widget.CustomAutoCompleteTextView
+            android:id="@+id/edtSearch"
+            style="@style/TextVIew.black.14"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginBottom="@dimen/size_8"
+            android:layout_marginEnd="@dimen/size_16"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@color/black_5"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawableStart="@drawable/ic_action_search"
+            android:hint="@string/layout_sf_search_by_phone"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:paddingEnd="@dimen/size_8"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingRight="@dimen/size_8"
+            android:paddingStart="@dimen/size_8" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:paddingEnd="@dimen/size_24"
+            android:paddingLeft="@dimen/size_24"
+            android:paddingRight="@dimen/size_24"
+            android:paddingStart="@dimen/size_24">
+
+            <RadioButton
+                android:id="@+id/rb_view_only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:paddingEnd="@dimen/size_0"
+                android:paddingLeft="@dimen/size_24"
+                android:paddingRight="@dimen/size_0"
+                android:paddingStart="@dimen/size_24"
+                android:text="@string/layout_sf_view_only"
+                android:textColor="@color/black_55"
+                android:theme="@style/Box_Blue" />
+
+            <RadioButton
+                android:id="@+id/rb_view_and_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/size_0"
+                android:paddingLeft="@dimen/size_24"
+                android:paddingRight="@dimen/size_0"
+                android:paddingStart="@dimen/size_24"
+                android:text="@string/layout_sf_view_and_edt"
+                android:textColor="@color/black_55"
+                android:theme="@style/Box_Blue" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8"
+            android:indeterminate="true"
+            android:theme="@style/Box_Blue" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size_1"-->
+        <!--android:background="@color/blue_100" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0_5"
+            android:background="@color/login_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:background="@drawable/round_bottom_layout"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Button.black"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_sf_cancel" />
+
+            <View
+                android:layout_width="@dimen/size_0_5"
+                android:layout_height="match_parent"
+                android:background="@color/login_text" />
+
+            <Button
+                android:id="@+id/btn_link"
+                style="@style/Button.blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_sf_search" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

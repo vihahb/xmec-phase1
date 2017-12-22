@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fillViewport="true"
+    tools:context="com.xtelsolution.xmec.view.activity.sharelink.ShareLinkListActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        android:background="@drawable/round_layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/size_8"
+        app:cardElevation="@dimen/size_4">
+
+        <LinearLayout
+            android:background="@color/white_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:tabIndicatorColor="@color/login_tabcolor"
+                app:tabIndicatorHeight="@dimen/size_2"
+                app:tabSelectedTextColor="@color/login_tabcolor"
+                app:tabTextAppearance="@style/Tablayout_TitleText"
+                app:tabTextColor="@color/login_tabcolor" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0_5"
+                android:background="@color/login_text" />
+            <com.xtelsolution.xmec.view.widget.HeightWrappingViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.xtelsolution.xmec.view.widget.HeightWrappingViewPager>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0_5"
+                android:background="@color/login_text" />
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Button.black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/layout_sf_close" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.v4.widget.NestedScrollView>

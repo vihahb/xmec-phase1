@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_continue_treatment"
+        style="@style/Button.black.Health_record_option"
+        android:drawableLeft="@mipmap/ic_hr_end_treatment_blue_24"
+        android:drawableStart="@mipmap/ic_hr_end_treatment_blue_24"
+        android:text="@string/layout_hr_continue_trearment" />
+
+    <Button
+        android:id="@+id/btn_end_of_treatment"
+        style="@style/Button.black.Health_record_option"
+        android:drawableLeft="@mipmap/ic_hr_end_treatment_blue_24"
+        android:drawableStart="@mipmap/ic_hr_end_treatment_blue_24"
+        android:text="@string/layout_hr_end_trearment" />
+
+    <View
+        android:id="@+id/view_1"
+        style="@style/View.Horizontal.Blue.Hr_Create" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        style="@style/Button.black.Health_record_option"
+        android:drawableLeft="@mipmap/ic_mbr_edit_blue_24"
+        android:drawableStart="@mipmap/ic_mbr_edit_blue_24"
+        android:text="@string/layout_hr_edit" />
+
+    <View
+        android:id="@+id/view_2"
+        style="@style/View.Horizontal.Blue.Hr_Create" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/Button.black.Health_record_option"
+        android:drawableLeft="@mipmap/ic_hr_delete_blue_24"
+        android:drawableStart="@mipmap/ic_hr_delete_blue_24"
+        android:text="@string/layout_hr_delete" />
+</LinearLayout>

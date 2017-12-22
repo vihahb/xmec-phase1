@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_16"
+    android:layout_height="@dimen/size_16"
+    android:layout_marginEnd="@dimen/size_8"
+    android:layout_marginRight="@dimen/size_8"
+    android:background="@drawable/outline_circle_blue_0_5">
+
+    <com.xtelsolution.xmec.view.widget.RoundImage
+        android:id="@+id/img_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_0_5"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view_status"
+        android:layout_width="@dimen/size_6"
+        android:layout_height="@dimen/size_6"
+        android:layout_gravity="bottom|right|end"
+        android:visibility="gone" />
+</FrameLayout>

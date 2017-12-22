@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layoutNew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.nshmura.recyclertablayout.RecyclerTabLayout
+            android:id="@+id/tab_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:background="@drawable/background_toolbar"
+            style="@style/style_rtl_RecyclerTabLayout" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="@dimen/size_8"
+            android:id="@+id/pageNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

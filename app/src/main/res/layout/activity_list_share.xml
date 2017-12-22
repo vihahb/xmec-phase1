@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:orientation="vertical"
+    tools:context="com.xtelsolution.xmec.view.activity.share.ListShareActivity">
+
+    <TextView
+        style="@style/TextVIew.blue.18"
+        android:gravity="center"
+        android:padding="@dimen/size_16"
+        android:text="@string/shared_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/blue_100" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.xtelsolution.xmec.view.widget.HeightWrappingViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:background="@color/login_text" />
+
+    <Button
+        android:id="@+id/btn_close"
+        style="@style/Button.blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/layout_alarm_brn_close" />
+</LinearLayout>

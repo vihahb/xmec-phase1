@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_24"
+    android:background="@color/white_100"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <CheckBox
+        android:id="@+id/ck_t2"
+        android:layout_marginTop="@dimen/size_8"
+        style="@style/CheckBox.Period_Week"
+        android:text="Thứ 2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_5">
+
+        <CheckBox
+            android:id="@+id/ck_t3"
+            style="@style/CheckBox.Period_Week"
+            android:text="Thứ 3" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/ck_t4"
+        style="@style/CheckBox.Period_Week"
+        android:text="Thứ 4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_5">
+
+        <CheckBox
+            android:id="@+id/ck_t5"
+            style="@style/CheckBox.Period_Week"
+            android:text="Thứ 5" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/ck_t6"
+        style="@style/CheckBox.Period_Week"
+        android:text="Thứ 6" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_5">
+
+        <CheckBox
+            android:id="@+id/ck_t7"
+            style="@style/CheckBox.Period_Week"
+            android:text="Thứ 7" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/ck_cn"
+        style="@style/CheckBox.Period_Week"
+        android:text="Chủ nhật" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0_5"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@color/login_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@color/login_dialog_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_disease_cancel" />
+
+        <View
+            android:layout_width="@dimen/size_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/login_text" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/Button.blue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/layout_disease_add" />
+    </LinearLayout>
+</LinearLayout>

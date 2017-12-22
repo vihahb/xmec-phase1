@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size_24"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextVIew.white.13"
+        android:background="@drawable/background_dialog_title"
+        android:gravity="center"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16"
+        android:text="@string/dialog_lg_change_password" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayout.Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_phone"
+            style="@style/EditText.Login"
+            android:hint="@string/dialog_lg_input_phone"
+            android:inputType="phone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0_5"
+            android:background="@color/login_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginTop="@dimen/size_24"
+        android:background="@color/login_dialog_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/dialog_lg_cancel" />
+
+        <View
+            android:layout_width="@dimen/size_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/login_text" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/Button.blue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/dialog_lg_continue" />
+    </LinearLayout>
+</LinearLayout>
